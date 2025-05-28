@@ -5897,7 +5897,7 @@ btn-text-flip
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  min-height: 400px;
+  min-height: 380px;
 }
 @media only screen and (max-width: 1199px) {
   .hero-area-3 .image-wrapper img {
