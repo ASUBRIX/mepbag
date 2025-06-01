@@ -10,7 +10,7 @@
   <title>MEPBAG</title>
 
   <!-- Fav Icon -->
-  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/mepbag logo icon.jpg">
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo/mepbag_logo_transparent.png">
 
 
 
@@ -28,6 +28,16 @@
 
   <!-- Template Main CSS File -->
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <!-- GLightbox JS -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
 
 
 </head>
@@ -63,7 +73,7 @@
         <div class="offset-widget offset-header">
           <div class="offset-logo">
             <a href="index.html">
-              <img src="assets/imgs/logo/mepbag logo icon.jpg" alt="site logo">
+              <img src="assets/imgs/logo/mepbag_logo_transparent.png" alt="site logo">
             </a>
           </div>
           <button id="side-info-close" class="side-info-close">
@@ -115,7 +125,8 @@
         <div class="offset-widget-box">
           <h2 class="title">Our Location</h2>
           <div class="mapouter" style="position:relative;text-align:right;height:250px;width:100%;">
-            <div class="gmap_canvas" style="overflow:hidden;background:none!important;height:250px;width:100%;margin-top: 20px;">
+            <div class="gmap_canvas"
+              style="overflow:hidden;background:none!important;height:250px;width:100%;margin-top: 20px;">
               <iframe width="100%" height="250" id="gmap_canvas"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.9118663422937!2d55.9654355!3d25.3742701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5e1d51783602f%3A0xe669b0d0cc321efa!2sMiddle%20east%20plastic%20bags%20industries%20LLC!5e0!3m2!1sen!2sin!4v1748761547831!5m2!1sen!2sin"
                 frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
@@ -139,7 +150,7 @@
         <div class="header-area-3-inner">
           <div class="header-logo">
             <a href="index.html">
-              <img src="assets/imgs/logo/mepbag logo icon.jpg" class="normal-logo" alt="Site Logo">
+              <img src="assets/imgs/logo/mepbag_logo_transparent.png" class="normal-logo" alt="Site Logo">
             </a>
           </div>
           <div class="header-nav">
@@ -339,30 +350,53 @@
                   <div class="container">
                     <div class="service-box-3-inner">
                       <div class="number">/001</div>
-                      <div class="content">
+                      <div class="content" id="pp-title">
                         <h3 class="title">PP WOVEN BAGS</h3>
                       </div>
-                      <div>
-                        <a href=""> <img src="assets/imgs/Products/pp_woven_bag.png" alt="image"></a>
+                      <div class="swiper pp-swiper" style="width: 200px;">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="assets/imgs/Products/pp_woven_bag.png" class="glightbox" data-gallery="ppbags"
+                              data-type="image">
+                              <img src="assets/imgs/Products/pp_woven_bag.png" alt="image">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/imgs/Products/pp_woven_bag.png" class="glightbox" data-gallery="ppbags"
+                              data-type="image">
+                              <img src="assets/imgs/Products/pp_woven_bag.png" alt="image">
+                            </a>
+                          </div>
+                          <!-- Add more slides -->
+                        </div>
                       </div>
-                      <!-- <div class="video">
-                        <video loop class="video_on_hover">
-                          <source src="https://feux.wprealizer.com/wp-content/uploads/2025/04/creative_design.mp4"
-                            type="video/mp4">
-                        </video> -->
-                      <!-- </div> -->
                     </div>
                   </div>
                 </div>
+
                 <div class="service-box-3 fade-anim video-container">
                   <div class="container">
                     <div class="service-box-3-inner">
                       <div class="number">/002</div>
-                      <div class="content">
+                      <div class="content" id="bopp-title">
                         <h3 class="title">BOPP BAGS</h3>
                       </div>
-                      <div>
-                        <a href=""> <img src="assets/imgs/Products/BOPP BAGS.png" alt="image"></a>
+                      <div class="swiper bopp-swiper" style="width: 200px;">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="assets/imgs/Products/pp_woven_bag.png" data-gallery="boppbags" data-type="image"
+                              class="glightbox">
+                              <img src="assets/imgs/Products/pp_woven_bag.png" alt="Image 1">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/imgs/Products/pp_woven_bag_2.png" data-gallery="boppbags" data-type="image"
+                              class="glightbox">
+                              <img src="assets/imgs/Products/BOPP BAGS.png" alt="Image 2">
+                            </a>
+                          </div>
+                          <!-- Add more slides as needed -->
+                        </div>
                       </div>
                       <!-- <div class="video">
                         <video loop class="video_on_hover">
@@ -377,11 +411,25 @@
                   <div class="container">
                     <div class="service-box-3-inner">
                       <div class="number">/003</div>
-                      <div class="content">
+                      <div class="content" id="nonwoven">
                         <h3 class="title">NON WOVEN BAGS</h3>
                       </div>
-                      <div>
-                        <a href=""> <img src="assets/imgs/Products/NON WOVEN BAGS.png" alt="image"></a>
+                      <div class="swiper nonwoven-swiper" style="width: 200px;">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="assets/imgs/Products/pp_woven_bag.png" data-gallery="nonwovenbags"
+                              data-type="image" class="glightbox">
+                              <img src="assets/imgs/Products/pp_woven_bag.png" alt="Image 1">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/imgs/Products/pp_woven_bag_2.png" data-gallery="nonwovenbags"
+                              data-type="image" class="glightbox">
+                              <img src="assets/imgs/Products/BOPP BAGS.png" alt="Image 2">
+                            </a>
+                          </div>
+                          <!-- Add more slides as needed -->
+                        </div>
                       </div>
                       <!-- <div class="video">
                         <video loop class="video_on_hover">
@@ -396,11 +444,25 @@
                   <div class="container">
                     <div class="service-box-3-inner">
                       <div class="number">/004</div>
-                      <div class="content">
+                      <div class="content" id="fibc">
                         <h3 class="title">FIBC</h3>
                       </div>
-                      <div>
-                        <a href=""> <img src="assets/imgs/Products/fibc.png" alt="image"></a>
+                      <div class="swiper fibc-swiper" style="width: 200px;">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="assets/imgs/Products/pp_woven_bag.png" data-gallery="fibcbags" data-type="image"
+                              class="glightbox">
+                              <img src="assets/imgs/Products/pp_woven_bag.png" alt="Image 1">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/imgs/Products/pp_woven_bag_2.png" data-gallery="fibcbags" data-type="image"
+                              class="glightbox">
+                              <img src="assets/imgs/Products/BOPP BAGS.png" alt="Image 2">
+                            </a>
+                          </div>
+                          <!-- Add more slides as needed -->
+                        </div>
                       </div>
                       <!-- <div class="video">
                         <video loop class="video_on_hover">
@@ -435,7 +497,7 @@
                   <div class="works-wrapper">
                     <div class="work-box-3 portfolio-panel">
                       <div class="thumb">
-                        <a href=""> <img src="assets/imgs/Products/quality certificate.jpg" alt="image"></a>
+                        <a> <img src="assets/imgs/Products/quality certificate.jpg" alt="image"></a>
                         <!-- <div class="content">
                           <span class="tag">Voyage Collective</span>
                           <h3 class="title"><a href="">Building Connections through Campaign</a>
@@ -449,7 +511,7 @@
                     </div>
                     <div class="work-box-3 portfolio-panel">
                       <div class="thumb">
-                        <a href=""><img src="assets/imgs/Products/safty.jpg" alt="image"></a>
+                        <a><img src="assets/imgs/Products/safty.jpg" alt="image"></a>
                         <!-- <div class="content">
                           <span class="tag">LUMERA STUDIOS</span>
                           <h3 class="title"><a href="">Shaping the bold future</a></h3>
@@ -462,7 +524,7 @@
                     </div>
                     <div class="work-box-3 portfolio-panel">
                       <div class="thumb">
-                        <a href=""><img src="assets/imgs/Products/food safty.jpg" alt="image"></a>
+                        <a><img src="assets/imgs/Products/food safty.jpg" alt="image"></a>
                         <!-- <div class="content">
                           <span class="tag">VERVE DIGITAL</span>
                           <h3 class="title"><a href="">Crafting limitless ideas</a></h3>
@@ -479,7 +541,7 @@
                 </div>
                 <h2 class="wrapper-title d-none">
                   <a href="">
-                    Our Portfolio<svg class="icon" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    Our Products<svg class="icon" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M5.30804 25.0961L22.4172 8.00637L23.4428 6.98186L21.9931 6.98186L1.55157 6.98186L8.56918 0.599994L26.4094 0.599997L33.4 0.599998L33.4 7.58187L33.4 25.4392L27.0094 32.451L27.0094 13.1477L27.0094 11.7003L25.9854 12.7231L9.45292 29.2362L5.30804 25.0961Z"
                         stroke="white" stroke-width="1.2" />
@@ -771,7 +833,7 @@
         <!-- testimonial area end  -->
 
         <!-- blog area start  -->
-        <section class="blog-area-3 pin-on-bottom">
+        <section id="insights" class="blog-area-3 pin-on-bottom">
           <div class="container">
             <div class="blog-area-3-inner section-spacing">
               <div class="section-header">
@@ -788,7 +850,7 @@
                     <a class="t-btn t-btn-circle" href="">
                       <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a class="t-btn t-btn-primary" href="">Blogs & News</a>
+                    <a class="t-btn t-btn-primary" href="">Let's Connect</a>
                     <a class="t-btn t-btn-circle" href="">
                       <i class="fa-solid fa-arrow-right"></i>
                     </a>
@@ -845,14 +907,14 @@
         <div class="cta-area-2">
           <div class="container">
             <div class="cta-area-2-inner">
-              <a href=" ">
-                <div class="section-header">
-                  <div class="section-title-wrapper">
-                    <div class="title-wrapper fade-anim">
-                      <h2 class="section-title">Sounds like a fit? <br>
-                        Let’s connect!</h2>
-                    </div>
+
+              <div class="section-header">
+                <div class="section-title-wrapper">
+                  <div class="title-wrapper fade-anim">
+                    <h2 class="section-title">Sounds like a fit? <br>
+                      Let’s connect!</h2>
                   </div>
+                </div><a href="#insights">
                   <div class="btn-wrapper fade-anim">
                     <svg class="icon" viewBox="0 0 137 136" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -860,8 +922,9 @@
                         stroke="white" />
                     </svg>
                   </div>
-                </div>
-              </a>
+                </a>
+              </div>
+
             </div>
           </div>
         </div>
@@ -870,7 +933,7 @@
             <div class="footer-widget-wrapper">
               <div class="footer-widget-box">
                 <div class="footer-logo">
-                  <a href="index.html"><img src="assets/imgs/logo/mepbag logo icon.jpg" alt="site logo"></a>
+                  <a href="index.html"><img src="assets/imgs/logo/mepbag_logo_transparent.png" alt="site logo"></a>
                 </div>
               </div>
               <div class="footer-widget-box">
@@ -898,8 +961,8 @@
           <div class="container">
             <div class="copyright-area-inner">
               <div class="copyright-text">
-                <p class="text">Powered by <a href="https://asubrix.com/">Asubrix International Pvt Ltd</a>. © <a
-                    href="/">MEPBAG</a> 2025. All rights reserved </p>
+                <p class="text">Powered by <a href="https://asubrix.com/" target="_blank">Asubrix International Pvt
+                    Ltd</a>. © <a href="/">MEPBAG</a> 2025. All rights reserved </p>
               </div>
               <ul class="copyright-nav-list">
                 <li><a href="#">Terms & Conditions</a></li>
@@ -933,6 +996,87 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // Initialize Swiper with autoplay disabled
+    const ppSwiper = new Swiper('.pp-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false
+      },
+    });
+
+    ppSwiper.autoplay.stop(); // Stop autoplay initially
+
+    // Enable autoplay on hover/click
+    const ppTitle = document.getElementById('pp-title');
+    ppTitle.addEventListener('mouseenter', () => ppSwiper.autoplay.start());
+    ppTitle.addEventListener('mouseleave', () => ppSwiper.autoplay.stop());
+    ppTitle.addEventListener('click', () => ppSwiper.autoplay.start());
+
+
+    const boppSwiper = new Swiper('.bopp-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false
+      },
+    });
+
+    boppSwiper.autoplay.stop(); // Stop autoplay initially
+
+    // Enable autoplay on hover/click
+    const boppTitle = document.getElementById('bopp-title');
+    boppTitle.addEventListener('mouseenter', () => boppSwiper.autoplay.start());
+    boppTitle.addEventListener('mouseleave', () => boppSwiper.autoplay.stop());
+    boppTitle.addEventListener('click', () => boppSwiper.autoplay.start());
+
+
+    const nonwovenSwiper = new Swiper('.nonwoven-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false
+      },
+    });
+
+    nonwovenSwiper.autoplay.stop(); // Stop autoplay initially
+
+    // Enable autoplay on hover/click
+    const nonwoven = document.getElementById('nonwoven');
+    nonwoven.addEventListener('mouseenter', () => nonwovenSwiper.autoplay.start());
+    nonwoven.addEventListener('mouseleave', () => nonwovenSwiper.autoplay.stop());
+    nonwoven.addEventListener('click', () => nonwovenSwiper.autoplay.start());
+
+    const fibcSwiper = new Swiper('.fibc-swiper', {
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false
+      },
+    });
+
+    fibcSwiper.autoplay.stop(); // Stop autoplay initially
+
+    // Enable autoplay on hover/click
+    const fibc = document.getElementById('fibc');
+    fibc.addEventListener('mouseenter', () => fibcSwiper.autoplay.start());
+    fibc.addEventListener('mouseleave', () => fibcSwiper.autoplay.stop());
+    fibc.addEventListener('click', () => fibcSwiper.autoplay.start());
+
+    const lightbox = GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: true,
+      zoomable: true,
+      closeButton: true,
+      moreText: 'See More',
+      openEffect: 'zoom',
+      slideEffect: 'slide',
+    });
+
+  </script>
 
 
 
